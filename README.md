@@ -1,4 +1,4 @@
-# Zoo Simulatorß
+# Zoo Simulator
 
 ## Overview
 
