@@ -1,4 +1,4 @@
-# Zoo Simulator - Frontend Developer Test
+# Zoo Simulatorß
 
 ## Overview
 
