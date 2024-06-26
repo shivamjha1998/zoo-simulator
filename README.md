@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Zoo Simulator - Frontend Developer Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project implements a Zoo Simulator as a single-page application using React. It's designed to demonstrate proficiency in object-oriented programming, responsive frontend design, and writing clean, maintainable code.
 
-In the project directory, you can run:
+## Design Decisions
 
-### `npm start`
+### Object-Oriented Programming
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Animal Classes**: Created separate classes for `Monkey`, `Giraffe`, and `Elephant`, encapsulating the specific behaviors and properties of each animal type.
+- **Inheritance**: Leveraged JavaScript's prototype inheritance to derive these specific animal classes from a base `Animal` class, promoting code reuse.
+- **Methods**: Implemented methods like `incrementHealth` and `decrementHealth` within the animal classes to encapsulate health modification logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Responsive Design
 
-### `npm test`
+- **CSS Media Queries**: Used media queries to adapt the layout for mobile devices, ensuring a good user experience across all screen sizes.
+- **Conditional Rendering**: In the React components, conditional rendering was used to display different UI elements based on the screen size.
+- **Flexbox**: Utilized Flexbox for a flexible and responsive layout that adjusts to the content dynamically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clean and Maintainable Code
 
-### `npm run build`
+- **Component Structure**: Broke down the UI into smaller components (`Animal`, `ActionButton`, `Clock`, etc.) to make the codebase more manageable and to improve readability.
+- **State Management**: Centralized state within the top-level `Zoo` component and passed necessary state down to children as props, following best practices for React state management.
+- **Hooks**: Made extensive use of React hooks (`useState`, `useEffect`) to handle state and side effects in a functional component style.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Experience
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Interactive UI**: Added interactive elements like buttons with hover effects and animations to make the application engaging.
+- **Feedback Mechanisms**: Implemented visual feedback such as health bars and status messages to inform users of the animals' health statuses.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Creativity
 
-### `npm run eject`
+- **Animations**: Introduced subtle animations for animal icons to add a playful touch to the simulator.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is organized into several key directories:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `src/components`: Contains all the React components used in the project.
+- `src/classes`: Includes the JavaScript classes for the animal types.
+- `src/icons`: Stores the animal icon images.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Build Instructions
 
-## Learn More
+The project is set up to build with a standard installation of the development environment (Node.js and npm). Run `npm install` to install dependencies and `npm run build` to create a production build of the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The `node_modules` directory has been excluded from the submission as per the instructions. Please run `npm install` to set up the project environment after unzipping the source code.
 
-### Code Splitting
+## Conclusion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This Zoo Simulator is designed with attention to detail and best practices in frontend development. The goal was to create an application that is not only functional but also visually appealing and user-friendly.
