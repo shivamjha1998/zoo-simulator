@@ -21,7 +21,7 @@ Add your app screenshots here to showcase the visuals and features.
 
 | Welcome Screen                                                                                                | Updated Screen                                                                                                |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.05.51.png" alt="Welcome screen" width="200"/> | <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.06.02.png" alt="Updated screen" width="200"/> |
+| <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.05.51.png" alt="Welcome screen" width="400"/> | <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.06.02.png" alt="Updated screen" width="400"/> |
 
 ## Design Decisions
 
