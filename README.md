@@ -4,6 +4,25 @@
 
 This project implements a Zoo Simulator as a single-page application using React. It's designed to demonstrate proficiency in object-oriented programming, responsive frontend design, and writing clean, maintainable code.
 
+The application simulates managing a zoo with different types of animals, each with distinct behaviors, health statuses, and interactions. Users can monitor animal health, interact through intuitive UI elements, and experience a visually engaging interface.
+
+## Project Functionality
+
+In this Zoo Simulator, users can:
+
+- View and monitor health statuses of different animals (Monkey, Giraffe, Elephant).
+- Interact with animals through action buttons to increase or decrease their health.
+- Observe dynamic changes through visual feedback such as health bars and animations.
+- Enjoy responsive design that adjusts seamlessly to different screen sizes.
+
+## Screenshots
+
+Add your app screenshots here to showcase the visuals and features.
+
+| Welcome Screen                                                                                                | Updated Screen                                                                                                |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.05.51.png" alt="Welcome screen" width="200"/> | <img src="./src/assets/screeenshots/Screenshot 2025-03-20 at 23.06.02.png" alt="Updated screen" width="200"/> |
+
 ## Design Decisions
 
 ### Object-Oriented Programming
@@ -15,40 +34,43 @@ This project implements a Zoo Simulator as a single-page application using React
 ### Responsive Design
 
 - **CSS Media Queries**: Used media queries to adapt the layout for mobile devices, ensuring a good user experience across all screen sizes.
-- **Conditional Rendering**: In the React components, conditional rendering was used to display different UI elements based on the screen size.
-- **Flexbox**: Utilized Flexbox for a flexible and responsive layout that adjusts to the content dynamically.
+- **Conditional Rendering**: In React components, conditional rendering was utilized to display different UI elements based on screen size.
+- **Flexbox**: Implemented Flexbox for flexible and responsive layouts that adjust dynamically to content.
 
 ### Clean and Maintainable Code
 
-- **Component Structure**: Broke down the UI into smaller components (`Animal`, `ActionButton`, `Clock`, etc.) to make the codebase more manageable and to improve readability.
-- **State Management**: Centralized state within the top-level `Zoo` component and passed necessary state down to children as props, following best practices for React state management.
-- **Hooks**: Made extensive use of React hooks (`useState`, `useEffect`) to handle state and side effects in a functional component style.
+- **Component Structure**: Broke down the UI into smaller components (`Animal`, `ActionButton`, `Clock`, etc.) for improved manageability and readability.
+- **State Management**: Centralized state within the top-level `Zoo` component and passed necessary state down to child components via props.
+- **Hooks**: Made extensive use of React hooks (`useState`, `useEffect`) to handle state and side effects.
 
 ### User Experience
 
-- **Interactive UI**: Added interactive elements like buttons with hover effects and animations to make the application engaging.
-- **Feedback Mechanisms**: Implemented visual feedback such as health bars and status messages to inform users of the animals' health statuses.
+- **Interactive UI**: Included interactive elements such as buttons with hover effects and animations.
+- **Feedback Mechanisms**: Provided visual feedback, including health bars and status messages, to enhance user interaction.
 
 ### Creativity
 
-- **Animations**: Introduced subtle animations for animal icons to add a playful touch to the simulator.
+- **Animations**: Integrated subtle animations for animal icons, enhancing the playful and engaging aspect of the simulator.
 
 ## Project Structure
 
 The project is organized into several key directories:
 
-- `src/components`: Contains all the React components used in the project.
-- `src/classes`: Includes the JavaScript classes for the animal types.
-- `src/icons`: Stores the animal icon images.
+- `src/components`: Contains all React components used.
+- `src/classes`: Includes JavaScript classes defining animal behaviors and properties.
+- `src/icons`: Stores animal icon images.
 
-## Build Instructions
+## Setup Instructions
 
-The project is set up to build with a standard installation of the development environment (Node.js and npm). Run `npm install` to install dependencies and `npm run build` to create a production build of the application.
+Ensure you have Node.js and npm installed on your system.
 
-## Notes
+```bash
+npm install
+npm run dev
+```
 
-The `node_modules` directory has been excluded from the submission as per the instructions. Please run `npm install` to set up the project environment after unzipping the source code.
+The application will start in development mode, typically accessible at `http://localhost:3000`.
 
 ## Conclusion
 
-This Zoo Simulator is designed with attention to detail and best practices in frontend development. The goal was to create an application that is not only functional but also visually appealing and user-friendly.
+This Zoo Simulator was crafted with careful attention to detail and adherence to best practices in frontend development. The objective was to produce an interactive, visually appealing, and user-friendly application.
